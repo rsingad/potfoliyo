@@ -1,0 +1,235 @@
+:root{
+  --blue:rgb(3, 4, 94);
+  --skyblue:rgb(0, 119, 182);
+  --aqua:rgb(0, 180, 216);
+  --lightAqua:rgb(144, 224, 239);
+  --light:rgb(202, 240, 248);
+}
+
+body{
+margin: 0px;
+/* padding: 0px; */
+}
+*{
+  box-sizing: border-box;
+  /* background-color: lightblue; */
+  /* color: white; */
+}
+.parentroot {
+  /* background-color: lime; */
+}
+header {
+  display: flex;
+  /* background-color: rgb(3, 4, 94); */
+  background-color: var(--aqua);
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 20px 0px 20px;
+}
+.logo {
+  /* background-color: pink; */
+  /* height: 40px; */
+}
+nav {
+  /* background-color: lime; */
+}
+.nav-links {
+  /* background-color: hotpink; */
+  display: flex;
+
+  list-style: none;
+  width: 100%;
+  /* justify-content: center; */
+  /* justify-content: start; */
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+}
+.nav-links a:hover {
+  color: var(--blue);
+  background-color:var(--lightAqua);
+  border-radius: 5px;
+}
+.clickstyle{
+  background-color:var(--light);
+  border-radius: 5px;
+  color: black !important;
+
+}
+/* home section css start */
+.home {
+  /* background-color: black; */
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0px 50px 0px;
+  /* color: #000000 !important; */
+  background-color:var(--blue);
+  display: flex;
+  justify-content: space-around;
+}
+.leftaside {
+  /* background-color: pink; */
+  display: grid;
+  align-content: center;
+  line-height: 10px;
+  text-transform: capitalize;
+}
+.leftcontent h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  /* background-color: lime; */
+  color: white;
+}
+.leftcontent h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.moreButton button {
+  margin-top: 15px;
+  background-color: transparent;
+  box-shadow: 0px 0px 1px 2px aqua;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+}
+.pra {
+  color: white;
+}
+.moreButton button:hover {
+  background-color: aqua;
+  color: black;
+  box-shadow: 0px 0px 100px 10px aqua, 0px 0px 1500px 20px aqua,
+    0px 0px 50px rgb(0, 107, 173);
+}
+.icons {
+  /* background-color: red; */
+  display: flex;
+  padding: 10px 0px;
+}
+.icons a {
+  text-decoration: none;
+}
+.icons div {
+  /* background-color: lime; */
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 2px solid aqua;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons div i {
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+.icons div:hover i {
+  font-size: 2rem;
+}
+
+.github:hover {
+  background-color: rgba(255, 255, 255, 0.979) !important;
+  border: none;
+  /* box-shadow: 0px 0px  100px 10px aqua,0px 0px 1500px 20px  aqua, 0px 0px 50px rgb(0, 107, 173),inset 0px 0px 10px 10px blue; */
+}
+.github:hover i {
+  color: rgb(0, 0, 0) !important;
+  /* font-size: 2rem; */
+}
+.facebook:hover,
+.linkedin:hover {
+  background-color: blue;
+  border: none;
+}
+.facebook:hover i,
+.insta:hover i,
+.linkedin:hover i {
+  color: white !important;
+}
+.insta:hover {
+  /* background:linear-gradient(hotpink 20%, rgba(0, 0, 255, 0.541) 40%, rgb(255, 217, 0) 100%); */
+  /* background: linear-gradient(to bottom,  hotpink 40%, blue 40%, blue 60%, yellow 70%, yellow 100%); */
+  background-color: rgb(253, 41, 151);
+  border: none;
+}
+
+/* .icons div:hover{
+  background-color: blue;
+  border: none;
+  box-shadow: 0px 0px  100px 10px aqua,0px 0px 1500px 20px  aqua, 0px 0px 50px rgb(0, 107, 173);
+
+
+} */
+.icons div:hover i {
+  /* color:white !important; */
+}
+
+.rightaside {
+  display: flex;
+  align-content: center;
+  border-radius: 50%;
+  height: fit-content;
+  background-color: lime;
+  background-color: blue;
+  box-shadow: inset 0px 0px 5px 10px rgb(3, 5, 111), 0px 0px 100px blue,
+    0px 0px 200px blue;
+  padding: 20px;
+}
+.imgbox {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: inset 0px 0px 5px 10px rgb(0, 238, 255),
+    0px 0px 50px rgb(71, 221, 255), 0px 0px 100px rgb(0, 174, 255);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.imgbox img {
+  /* object-position: center; */
+  width: 100%;
+  /* border-radius: 50%; */
+
+  height: 750px;
+}
+
+/* project section */
+.project {
+  background-color: lightblue;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 40px;
+}
+.project_card {
+  background-color: white;
+  box-shadow: 2px 2px 4px 2px black;
+  border-radius: 5px;
+  /* min-width: 300px; */
+  width: 400px;
+  /* max-width: 500px; */
+  /* height: ; */
+  padding: 20px;
+}
+.project_card img {
+  width: 100%;
+  height: 300px;
+/* background-color: rgb(222, 222, 222); */
+  border-radius: 10px;
+
+}
