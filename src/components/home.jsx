@@ -19,9 +19,12 @@ function Home() {
         </div>
       </div>
       <div className="rightaside">
+      <div className="lightCircal">
         <div className="imgbox">
           <img src="./public/my.jpg" alt="image" />
         </div>
+
+      </div>
       </div>
     </section>
   );
