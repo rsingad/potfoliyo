@@ -13,18 +13,7 @@ function About() {
         <div className="aboutContent">
           <h2>full stack developer</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-            distinctio et eveniet nesciunt quae architecto adipisci ipsam
-            voluptatibus voluptas nisi fugit, facere accusamus iste commodi?
-            Blanditiis rerum perspiciatis, quibusdam corrupti dolorum labore ex
-            officiis aliquid tempora deserunt, libero dolorem quae recusandae
-            maiores! Incidunt debitis blanditiis, porro inventore voluptatum
-            obcaecati voluptatibus ducimus molestias voluptates ullam nisi
-            consequatur earum dolore hic reiciendis unde, autem iure modi. Eos
-            dolore ea ipsa autem impedit id soluta alias, deleniti omnis
-            repudiandae possimus cum cumque iure voluptatibus dolores blanditiis
-            nesciunt et iste harum laborum ipsam, aliquid quis! Optio aliquam
-            laborum reprehenderit suscipit dicta vero, sint deleniti?
+          Dynamic and highly motivated Full Stack Developer with extensive experience in developing and maintaining web applications using the MERN stack (MongoDB, Express.js, React, and Node.js). Possessing strong proficiency in front-end technologies such as HTML5, CSS3, and JavaScript, along with a deep understanding of back-end development and database management. Adept at creating efficient, scalable, and user-friendly solutions, with a keen eye for detail and a commitment to delivering high-quality work. Proven ability to manage complex projects from conception through to successful deployment. Excellent problem-solving skills, with a collaborative mindset and a passion for continuous learning and professional growth.
           </p>
           <div className="resum_downlod_btn">
             <a href={"ramesh_singar.pdf"} download={"ramesh.pdf"}>

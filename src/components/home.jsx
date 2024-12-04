@@ -3,46 +3,70 @@ import SocialMediaIcon from "./socialmediaicon";
 import { useEffect, useState } from "react";
 
 function Home() {
-  
-  const [text, setText] = useState("hellow");
+  const [text, setText] = useState("");
+  const [inputedVoice, setInputVoice] = useState("hello");
 
-  // Function to speak the text
+
+  // Speech synthesis function
   const speak = (text) => {
     let text_speak = new SpeechSynthesisUtterance(text);
-    text_speak.rate = 1; // Speech rate (1 is normal speed)
-    text_speak.pitch = -50; // Pitch of the voice
-    text_speak.volume = 100; // Volume level
+    text_speak.rate = 1;
+    text_speak.pitch = 1;
+    text_speak.volume = 1;
+    text_speak.lang = "hi-IN"; // Adjust to the language of your choice
     window.speechSynthesis.speak(text_speak);
   };
-  useEffect(()=>{
-    setTimeout(()=>{
-      speak("Hellow   i am  Ramesh singad and i' a frontend developer");
-    },1000);
-  },[])
 
+  function wishMe() {
+    const date = new Date();
+    const hours = date.getHours();
+
+    if (hours >= 4 && hours <= 12) {
+      setText("Good morning boss");
+    } else if (hours > 12 && hours < 16) {
+      setText("Good afternoon sir");
+    } else if (hours >= 16 && hours <= 22) {
+      setText("Good evening sir");
+    } else {
+      setText("Hello boss");
+    }
+  }
+  
+
+  useEffect(() => {
+    wishMe();
+  }, [inputedVoice]);
+
+  // useEffect(() => {
+  //   if (text) {
+  //     speak(text);
+  //   }
+  // }, [text]);
 
   return (
     <section className="home">
-     
       <div className="leftaside">
         <div className="leftcontent">
-          <h2>Hellow ,it's me</h2>
+          <h2>Hello ,it's me</h2>
           <h1>Ramesh singad</h1>
           <h2>and i' a frontend developer</h2>
+          {/* <p>{inputedVoice}</p> */}
         </div>
         <div>
-          <p className="pra">more text own write...</p>
+          <p className="pra">I specialize in React, HTML5, CSS3, and JavaScript, and I believe in creating exceptional user experiences</p>
         </div>
         <SocialMediaIcon />
         <div className="moreButton">
           <button>more about me</button>
         </div>
-                  
       </div>
       <div className="rightaside">
         <div className="lightCircal">
-          <div className="imgbox" onClick={()=>speak("hellow boss....")}>
-            <img src="./public/my.jpg" alt="image" />
+          <div className="imgbox" 
+          
+          >
+            {/* <img src="./public/my.jpg" alt="image" onClick={lisnerstrt} /> */}
+            <img src="/my.jpg" alt="image"  style={{ cursor: "pointer" }} />
           </div>
         </div>
       </div>
@@ -50,3 +74,4 @@ function Home() {
   );
 }
 export default Home;
+
