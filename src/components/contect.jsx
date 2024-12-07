@@ -1,4 +1,3 @@
-import "./contect.css";
 import SocialMediaIcon from "./socialmediaicon";
 function Contect() {
   return (
@@ -20,7 +19,7 @@ function Contect() {
             <i class="fa-solid fa-envelope"></i>r.singerjat@gmail.com
           </div>
           <div>
-            <i class="fa-solid fa-phone"></i>7877904941
+            <i class="fa-solid fa-phone"></i>7877*****
           </div>
           <div>
             <i class="fa-brands fa-whatsapp"></i>9462066846
@@ -30,7 +29,7 @@ function Contect() {
           <SocialMediaIcon />
         </div>
       </div>
-      <form className="contectform ">
+      <form className="contectform">
         <input type="text" placeholder="your name" required />
         <br />
         <input type="email" placeholder="your email" required />

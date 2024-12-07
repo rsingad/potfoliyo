@@ -1,4 +1,4 @@
-import "./contect.css";
+
 import { NavLink } from "react-router-dom";
 function About() {
   return (

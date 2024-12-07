@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "../contect.css";
 function Project() {
   const projects = [
     {

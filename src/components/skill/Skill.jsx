@@ -1,4 +1,4 @@
-import "../contect.css";
+
 function Skill() {
   const tech_skill = [
     {
