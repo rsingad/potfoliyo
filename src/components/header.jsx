@@ -10,17 +10,17 @@ function Header() {
     setActivbtn(() => e.target.id);
   };
   return (
-    <header>
+    <header className="fam2">
       <div className="logo">
         <b>potfoliyo</b>
       </div>
-      <nav>
+      <nav className="">
         <ul className="nav-links">
           <li>
             <NavLink
               to={"/"}
               id="home"
-              className={activbtn == "home" ? "clickstyle" : ""}
+              className={activbtn == "home" ? "clickstyle yuji-mai-regular" : ""}
               onClick={handelclick}
             >
               Home
@@ -30,7 +30,7 @@ function Header() {
             <NavLink
               to={"/about"}
               id="about"
-              className={activbtn === "about" ? "clickstyle" : ""}
+              className={activbtn === "about" ? "clickstyle yuji-mai-regular" : ""}
               onClick={handelclick}
             >
               about
@@ -40,7 +40,7 @@ function Header() {
             <NavLink
               to={"/skills"}
               id="skill"
-              className={activbtn === "skill" ? "clickstyle" : ""}
+              className={activbtn === "skill" ? "clickstyle yuji-mai-regular" : ""}
               onClick={handelclick}
             >
               skill
@@ -50,7 +50,7 @@ function Header() {
             <NavLink
               to={"/Project"}
               id="project"
-              className={activbtn === "project" ? "clickstyle" : ""}
+              className={activbtn === "project" ? "clickstyle yuji-mai-regular" : ""}
               onClick={handelclick}
             >
               Project
@@ -60,7 +60,7 @@ function Header() {
             <NavLink
               to={"/contect"}
               id="contect"
-              className={activbtn === "contect" ? "clickstyle" : ""}
+              className={activbtn === "contect" ? "clickstyle yuji-mai-regular" : ""}
               onClick={handelclick}
             >
               contect

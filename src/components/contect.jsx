@@ -2,20 +2,20 @@ import "./contect.css";
 import SocialMediaIcon from "./socialmediaicon";
 function Contect() {
   return (
-    <section className="contect">
+    <section className="contect ">
       <div className="contectasideleft">
-        <h1>contect Me</h1>
-        <h2>let's work together</h2>
-        <p>
+        <h1 className="clr yuji-mai-regular">Contect Me</h1>
+        <h2 className="yuji-mai-regular">let's work together</h2>
+        <p className="fam2">
           I am open to collaboration and excited to work on innovative projects.
           Feel free to reach out!
         </p>
-        <p>
+        <p className="fam2">
           I am passionate about delivering creative and impactful solutions.
           Whether it's a technical challenge or a groundbreaking idea, let's
           bring it to life together.
         </p>
-        <div className="pmedia">
+        <div className="pmedia fam2">
           <div>
             <i class="fa-solid fa-envelope"></i>r.singerjat@gmail.com
           </div>
@@ -30,7 +30,7 @@ function Contect() {
           <SocialMediaIcon />
         </div>
       </div>
-      <form className="contectform">
+      <form className="contectform ">
         <input type="text" placeholder="your name" required />
         <br />
         <input type="email" placeholder="your email" required />

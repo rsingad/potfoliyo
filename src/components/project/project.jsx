@@ -43,12 +43,12 @@ function Project() {
           <div key={index} className="project_card">
             {/* <div className="project-title">{project.title}</div> */}
             <img src={project.img} alt="" />
-            <h1>{project.title}</h1>
+            <h1 className="fam2">{project.title}</h1>
             <p>Some text about the jeans..</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {project.technology.map((item, ind) => {
                 return (
-                  <div
+                  <div className=""
                     style={{
                       backgroundColor: " rgb(222, 222, 222)",
                       padding: "5px",

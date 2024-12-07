@@ -2,16 +2,22 @@ import "../contect.css";
 function Skill() {
   const tech_skill = [
     {
-      title: "html",
+      title: "html & html5",
       par: 85,
       logo_class: "fa-brands fa-html5",
       color: "red",
     },
     {
-      title: "css",
-      par: 60,
+      title: "css & css3",
+      par: 75,
       logo_class: "fa-brands fa-css3-alt",
       color: "blue",
+    },
+    {
+      title: "Bootstrap",
+      par: 65,
+      logo_class: "fa-brands fa-bootstrap",
+      color: "lightblue",
     },
     {
       title: "javascript",
@@ -20,27 +26,65 @@ function Skill() {
       color: "yellow",
     },
     {
-      title: "React",
+      title: "React js",
       par: 70,
       logo_class: "fa-brands fa-react",
       color: "aqua",
+    },{
+      title: "mongo DB",
+      par: 40,
+      logo_class: "fa-brands fa-envira",
+      color: "lime",
+    },
+    {
+      title: "express",
+      par: 40,
+      logo_class: "fa-brands fa-node",
+      color: "lime",
+    },
+    {
+      title: "C language",
+      par: 50,
+      logo_class: "fa-brands fa-c",
+      color: "#0000cd",
+    },
+    {
+      title: "C++ language",
+      par: 25,
+      logo_class: "fa-brands fa-c",
+      color: "lightblue",
+    },
+    {
+      title: "python",
+      par: 20,
+      logo_class: "fa-brands fa-python",
+      color: "Goldenrod",
+    },
+    {
+      title: "git & github",
+      par: 80,
+      logo_class: "fa-brands fa-github",
+      color: "white",
     },
   ];
   const pro_skill = [
+    {
+    title: "Problem Solving",
+      par: 90,
+    },
     {
       title: "Creativity",
       par: 85,
     },
     {
-      title: "Communiction",
-      par: 60,
-    },
-    {
-      title: "Problem Solving",
+      title: "TeamWork",
       par: 80,
     },
     {
-      title: "TeamWork",
+      title: "Communiction",
+      par: 30,
+    },{
+      title: "Communiction-hindi",
       par: 80,
     },
   ];
@@ -48,16 +92,16 @@ function Skill() {
   return (
     <>
       <h1>skills</h1>
-      <section className="skill">
+      <section className="skill yuji-mai-regular">
         <div className="Technical_skills">
-          <div className="tech_header">
+          <div className="tech_header clr">
             <h1>technical skills</h1>
             <div className="underline"></div>
           </div>
           {tech_skill.map((item, index) => {
             const x = item.par - 5;
             return (
-              <div className="my_skill">
+              <div className="my_skill fam2">
                 <div className="logo_Prs">
                   <div className="logo_Sec">
                     <i
@@ -81,7 +125,7 @@ function Skill() {
           })}
         </div>
         <div className="professional_skills">
-          <div className="tech_header">
+          <div className="tech_header clr">
             <h1>Professional skills</h1>
             <div className="underline"></div>
           </div>

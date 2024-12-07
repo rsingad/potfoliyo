@@ -6,7 +6,6 @@ function Home() {
   const [text, setText] = useState("");
   const [inputedVoice, setInputVoice] = useState("hello");
 
-
   // Speech synthesis function
   const speak = (text) => {
     let text_speak = new SpeechSynthesisUtterance(text);
@@ -31,7 +30,6 @@ function Home() {
       setText("Hello boss");
     }
   }
-  
 
   useEffect(() => {
     wishMe();
@@ -44,16 +42,36 @@ function Home() {
   // }, [text]);
 
   return (
-    <section className="home">
+    <section className="home yuji-mai-regular">
       <div className="leftaside">
         <div className="leftcontent">
-          <h2>Hello ,it's me</h2>
-          <h1>Ramesh singad</h1>
-          <h2>and i' a frontend developer</h2>
+          <h2>
+            Hello ,it's me <br />
+            <span
+              style={{
+                fontSize: "2.5rem",
+                // fontWeight: "bold",
+                // ariaHidden: "true",
+                // background:
+                //   "linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #aa2c0f 78%)",
+                // WebkitBackgroundClip: "text",
+                // WebkitTextFillColor: "transparent",
+              }}
+            >
+              Ramesh singad
+            </span>
+            <br />
+            and i' a <span style={{ color: "gold" }}>
+              Engineer & developer
+            </span>{" "}
+          </h2>
           {/* <p>{inputedVoice}</p> */}
         </div>
         <div>
-          <p className="pra">I specialize in React, HTML5, CSS3, and JavaScript, and I believe in creating exceptional user experiences</p>
+          <p className="pra">
+            I specialize in React, HTML5, CSS3, and JavaScript, and I believe in
+            creating exceptional user experiences
+          </p>
         </div>
         <SocialMediaIcon />
         <div className="moreButton">
@@ -62,11 +80,9 @@ function Home() {
       </div>
       <div className="rightaside">
         <div className="lightCircal">
-          <div className="imgbox" 
-          
-          >
+          <div className="imgbox">
             {/* <img src="./public/my.jpg" alt="image" onClick={lisnerstrt} /> */}
-            <img src="/my.jpg" alt="image"  style={{ cursor: "pointer" }} />
+            <img src="/avtar2.png" alt="image" style={{ cursor: "pointer", }} />
           </div>
         </div>
       </div>
@@ -74,4 +90,3 @@ function Home() {
   );
 }
 export default Home;
-

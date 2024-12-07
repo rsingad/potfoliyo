@@ -6,11 +6,13 @@ import Skill from "./skill/Skill";
 function MainPage() {
   return (
     <>
+    
       <Home />
       <About />
       <Skill/>
       <Project/>
       <Contect />
+      
     </>
   );
 }
