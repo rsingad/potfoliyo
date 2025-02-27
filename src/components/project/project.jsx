@@ -43,7 +43,7 @@ function Project() {
             {/* <div className="project-title">{project.title}</div> */}
             <img src={project.img} alt="" />
             <h1 className="fam2">{project.title}</h1>
-            <p>Some text about the jeans..</p>
+            <p>Some text about the project....</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {project.technology.map((item, ind) => {
                 return (
