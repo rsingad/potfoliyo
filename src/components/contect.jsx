@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import SocialMediaIcon from "./socialmediaicon";
 function Contect() {
   return (
@@ -15,13 +16,16 @@ function Contect() {
           bring it to life together.
         </p>
         <div className="pmedia fam2">
-          <div>
-            <i class="fa-solid fa-envelope"></i>r.singerjat@gmail.com
+          <div onClick={() => (window.location.href = "mailto:r.singerjat@gmail.com")} style={{ cursor: "pointer" }}>
+            <i className="fa-solid fa-envelope"></i> r.singerjat@gmail.com
           </div>
+
+
+
           <div>
-            <i class="fa-solid fa-phone"></i>7877*****
+            <i class="fa-solid fa-phone"></i>7877XXXXXX
           </div>
-          <div>
+          <div onClick={()=>(window.location.href="https://wa.me/919462066846")} style={{cursor:"pointer"}}>
             <i class="fa-brands fa-whatsapp"></i>9462066846
           </div>
         </div>
