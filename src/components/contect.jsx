@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+
 import SocialMediaIcon from "./socialmediaicon";
 
 function Contect() {
@@ -21,15 +22,20 @@ function Contect() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/api/contact", formData);
+      const response = await axios.post(
+       "https://desirable-mindfulness-production.up.railway.app/api/contact", 
+        formData
+      );
 
       if (response.status === 200) {
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        alert("Failed to send message.");
       }
     } catch (error) {
-      console.error("Error sending message:", error);
-      alert("Failed to send message.");
+      console.error("Error:", error);
+      alert("Something went wrong.");
     }
   };
 
@@ -65,6 +71,7 @@ function Contect() {
         <br />
         <input type="submit" value="Submit" />
       </form>
+      
     </section>
   );
 }
