@@ -7,7 +7,7 @@ const Dashboard = () => {
     const [user, setUser] = useState(null);
     useEffect(() => {
         axios
-            .get("http://localhost:5000/auth/all-users", {
+            .get("https://desirable-mindfulness-production.up.railway.app/auth/all-users", {
                 // withCredentials: true, // 👈 Session cookie bhejne ke liye
             })
             .then((res) => {

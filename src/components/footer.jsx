@@ -8,10 +8,10 @@ const Footer = () => {
         <h4 className="mb-4 fw-semibold">Connect with GitHub</h4>
 
         <div className="d-flex justify-content-center flex-wrap gap-3 mb-4">
-          <a href="http://localhost:5000/auth/github" className="btn btn-outline-success d-flex align-items-center gap-2 px-4 py-2">
+          <a href="https://desirable-mindfulness-production.up.railway.app/auth/github" className="btn btn-outline-success d-flex align-items-center gap-2 px-4 py-2">
             <FaGithub size={20} /> Sign Up with GitHub
           </a>
-          <a  href="http://localhost:5000/auth/github" className="btn btn-outline-primary d-flex align-items-center gap-2 px-4 py-2">
+          <a  href="https://desirable-mindfulness-production.up.railway.app/auth/github" className="btn btn-outline-primary d-flex align-items-center gap-2 px-4 py-2">
             <FaGithub size={20} /> Log In with GitHub
           </a>
         </div>
