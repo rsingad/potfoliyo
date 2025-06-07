@@ -7,6 +7,7 @@ import About from './components/about';
 import MainPage from './components/mainpage';
 import Skill from './components/skill/Skill';
 import Project from './components/project/project';
+import Dashboard from './components/dashbord';
 // import Chat from './components/chat/chat';
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/skills' element={<Skill/>}/>
         <Route path='/contect' element={<Contect/>}/>
         <Route path='/Project' element={<Project/>}/>
+        <Route path="/dashboard" element={<Dashboard/>} />
         {/* <Route path='/chat' element={<Chat/>}/> */}
       </Routes>
     </BrowserRouter>
